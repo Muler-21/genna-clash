@@ -1,38 +1,48 @@
-# Genna Clash — GitHub Pages + Firebase test build
+# Genna Clash — የጎጃም ገና (Full static version)
 
-Static, mobile-first 20-question test build. No Node server, no Socket.IO, no player-facing sign-in screen. Firebase Anonymous Auth runs silently; Realtime Database synchronizes rooms. All art is original SVG/CSS and sound is synthesized with Web Audio.
+This is the expanded GitHub Pages + Firebase Realtime Database version. It uses original SVG/CSS illustrations and browser-generated Web Audio sound effects. No player registration form is shown; Firebase Anonymous Authentication runs silently.
 
-## Before you publish
+## Important: preserve your live Firebase settings and rules
 
-1. Create a Firebase project and a **Realtime Database**.
-2. Enable **Authentication → Sign-in method → Anonymous**.
-3. Register a Firebase **Web app** and copy its config into `firebase-config.js` (replace all placeholders).
-4. Paste `database.rules.json` into Realtime Database → Rules and click **Publish**.
-5. In Authentication → Settings → Authorized domains, ensure `muler-21.github.io` is listed (add it if needed).
-6. Upload the contents of this folder to the root of the public GitHub repo `muler-21/genna-clash` and enable Pages from `main` / `(root)`.
+This update intentionally does **not** include `firebase-config.js` or `database.rules.json` in the ZIP. Keep the existing `firebase-config.js` and the corrected `database.rules.json` in your GitHub repository. Do not replace either with an earlier test-build copy.
 
-## Firebase web config
+No new database paths are introduced. Existing paths are retained:
 
-`firebase-config.js` is intentionally a template. It is expected to be public in a static website; Firebase web config identifies the project but is not a service-account secret. **Never add a service-account JSON or private server key.** Use the exact `databaseURL` shown in the Firebase console; the database hostname can vary by region.
+- `rooms/{code}/state`
+- `rooms/{code}/players/{uid}`
+- `rooms/{code}/answers/{round}/{uid}`
 
-## Game flow
+The state object gains optional `grade` and `categories` fields for Teacher Mode; existing security rules that validate required fields and permit the host to update state should allow these additional fields. The question payload gains optional `id` and `grade` fields. Answers and player records keep their existing paths. The app continues to use `used` as an optional map keyed by stable question IDs; Firebase omits empty objects, so rules must not require `used` to exist.
 
-The host browser starts a round, chooses a question, writes a 15-second deadline using the offset from `.info/serverTimeOffset`, gathers answer records, then writes scoring, ball position and reveal state. A new connected player can take over if the prior host's presence has gone offline. Reconnect uses the saved anonymous UID and room code, with a 30-second grace window. If the room has disappeared, the UI returns to Home with a message.
+**Rule compatibility note:** I have not changed the rules. Your deployed rules must already permit the host to update other players' `correct` and `fastest` stats, and must permit the current host to transfer `state.hostUid` when the old host is disconnected, as in your corrected rules. If either is not allowed, round scoring or host handoff will fail. No additional rule is intentionally required for `grade` or `categories`.
 
-## Important limitations of this browser-hosted prototype
+## Files to update in the GitHub repository
 
-- This is a **20-question test build**, not the full 120-question release or a security-hardened competitive game.
-- Since the correct answer is shipped to browsers as requested, a technically curious player can inspect the JavaScript or database state before the reveal. UI hiding is not secret storage.
-- Firebase rules can restrict answer writes to the authenticated player's own path, once per round and before the deadline, and restrict game-state writes to the current host (with a controlled handover when the old host is disconnected). However, because round scoring runs in the host's browser, a modified host client can cheat. Strong anti-cheat requires trusted server-side logic, which conflicts with the all-static/no-backend requirement.
-- This test version should be tested with two different browsers/devices before sharing widely. Browser-host migration, reconnection and rules depend on the exact Firebase project configuration.
-- Firebase Spark is free within quotas; Realtime Database currently includes 1 GB stored data and 10 GB/month downloads, with a 100 simultaneous-connection cap. If quotas are exceeded, service may be throttled or disabled for the remainder of the period. See Firebase's current pricing/limits docs.
+Upload/replace these files at the repository root:
 
-## Local preview
+- `index.html`
+- `app.js`
+- `questions.js`
+- `style.css`
+- `.nojekyll`
+- `README.md`
 
-Because the site uses Firebase, use a local static server rather than opening `index.html` directly. For example, with Python installed:
+Keep the repository's existing `firebase-config.js` and `database.rules.json` untouched.
 
-```bash
-python -m http.server 8000
-```
+## Teacher Mode
 
-Then open `http://localhost:8000/`. Add `localhost` to Firebase Authentication's authorized domains if Firebase requests it.
+The host chooses grade 3–8 and one or more categories in the lobby. The selected grade includes questions tagged at or below that grade. Categories are Math, Science, Amharic Words, and Ethiopia & Gojjam. Questions are selected without repeats during a match.
+
+## Data / trust notes
+
+The host browser coordinates timers, scoring, and ball movement using Firebase's server-time offset. Because this is a static client-hosted game, a technically skilled player can inspect client-delivered question data or modify their browser. This is a casual educational prototype, not a cheat-resistant competitive service. The Firebase rules are important for limiting ordinary writes but cannot make client-side answer keys secret.
+
+## Quick verification
+
+1. Replace the listed files in GitHub, leaving Firebase config and rules alone.
+2. Wait for GitHub Pages to publish, then hard-refresh the site.
+3. Create a field, choose grade/categories in the lobby, and join from a second browser.
+4. Test a question, one-answer limit, scoring, reveal, goal celebration, and next round.
+5. Try a refresh/reconnect and host disconnect/handoff.
+
+Public URL: https://muler-21.github.io/genna-clash/
