@@ -5,12 +5,12 @@
         "state": {
           ".read": "auth != null",
           ".write": "auth != null && ((!data.exists() && newData.child('hostUid').val() === auth.uid) || (data.child('hostUid').val() === auth.uid) || (data.exists() && root.child('rooms').child($room).child('players').child(data.child('hostUid').val()).child('connected').val() !== true && newData.child('hostUid').val() === auth.uid))",
-          ".validate": "newData.hasChildren(['code','hostUid','phase','score','ball','goalTarget','round','used']) && newData.child('code').val() === $room && (newData.child('goalTarget').val() === 1 || newData.child('goalTarget').val() === 3 || newData.child('goalTarget').val() === 5) && (newData.child('phase').val() === 'lobby' || newData.child('phase').val() === 'question' || newData.child('phase').val() === 'reveal' || newData.child('phase').val() === 'finished')"
+          ".validate": "newData.hasChildren(['code','hostUid','phase','score','ball','goalTarget','round']) && newData.child('code').val() === $room && (newData.child('goalTarget').val() === 1 || newData.child('goalTarget').val() === 3 || newData.child('goalTarget').val() === 5) && (newData.child('phase').val() === 'lobby' || newData.child('phase').val() === 'question' || newData.child('phase').val() === 'reveal' || newData.child('phase').val() === 'finished')"
         },
         "players": {
           "$uid": {
             ".read": "auth != null",
-            ".write": "auth != null && auth.uid === $uid && root.child('rooms').child($room).child('state').exists()",
+            ".write": "auth != null && root.child('rooms').child($room).child('state').exists() && (auth.uid === $uid || root.child('rooms').child($room).child('state').child('hostUid').val() === auth.uid)",
             ".validate": "newData.hasChildren(['uid','name','team']) && newData.child('uid').val() === $uid && newData.child('name').isString() && newData.child('name').val().length <= 12 && (newData.child('team').val() === 'red' || newData.child('team').val() === 'green')"
           }
         },
