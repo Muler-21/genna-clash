@@ -1,0 +1,29 @@
+{
+  "rules": {
+    "rooms": {
+      "$room": {
+        "state": {
+          ".read": "auth != null",
+          ".write": "auth != null && ((!data.exists() && newData.child('hostUid').val() === auth.uid) || (data.child('hostUid').val() === auth.uid) || (!root.child('rooms').child($room).child('players').child(data.child('hostUid').val()).child('connected').val() && newData.child('hostUid').val() === auth.uid))",
+          ".validate": "newData.hasChildren(['code','hostUid','phase','score','ball','goalTarget','round','used']) && newData.child('code').val() === $room && (newData.child('goalTarget').val() === 1 || newData.child('goalTarget').val() === 3 || newData.child('goalTarget').val() === 5) && (newData.child('phase').val() === 'lobby' || newData.child('phase').val() === 'question' || newData.child('phase').val() === 'reveal' || newData.child('phase').val() === 'finished')"
+        },
+        "players": {
+          "$uid": {
+            ".read": "auth != null",
+            ".write": "auth != null && auth.uid === $uid && root.child('rooms').child($room).child('state').exists()",
+            ".validate": "newData.hasChildren(['uid','name','team']) && newData.child('uid').val() === $uid && newData.child('name').isString() && newData.child('name').val().length <= 12 && (newData.child('team').val() === 'red' || newData.child('team').val() === 'green')"
+          }
+        },
+        "answers": {
+          "$round": {
+            "$uid": {
+              ".read": "auth != null",
+              ".write": "auth != null && auth.uid === $uid && root.child('rooms').child($room).child('state').child('phase').val() === 'question' && root.child('rooms').child($room).child('state').child('round').val() == ($round * 1) && now < root.child('rooms').child($room).child('state').child('deadline').val() && !data.exists() && newData.hasChildren(['choice','correct']) && (newData.child('choice').val() === 0 || newData.child('choice').val() === 1 || newData.child('choice').val() === 2 || newData.child('choice').val() === 3)",
+              ".validate": "newData.child('choice').isNumber() && newData.child('correct').isBoolean()"
+            }
+          }
+        }
+      }
+    }
+  }
+}

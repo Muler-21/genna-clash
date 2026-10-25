@@ -1,0 +1,22 @@
+const QUESTIONS = [
+ {c:'math',en:'What is 7 × 8?',am:'7 × 8 ስንት ነው?',o:['54','56','64','48'],a:1},
+ {c:'math',en:'What is 125 + 75?',am:'125 + 75 ስንት ነው?',o:['180','190','200','210'],a:2},
+ {c:'math',en:'What is half of 90?',am:'የ90 ግማሽ ስንት ነው?',o:['35','40','45','50'],a:2},
+ {c:'math',en:'How many sides does a hexagon have?',am:'ስድስት ጎን ስንት ጎኖች አሉት?',o:['5','6','7','8'],a:1},
+ {c:'math',en:'What is 9²?',am:'9² ስንት ነው?',o:['18','72','81','99'],a:2},
+ {c:'science',en:'At sea level, water boils at about…',am:'በባሕር ወለል ላይ ውሃ በስንት ዲግሪ ይፈላል?',o:['50 °C','75 °C','100 °C','150 °C'],a:2},
+ {c:'science',en:'Which planet do we live on?',am:'የምንኖርበት ፕላኔት የትኛው ነው?',o:['Mars / ማርስ','Earth / ምድር','Venus / ቬኑስ','Jupiter / ጁፒተር'],a:1},
+ {c:'science',en:'Which part of a plant takes in water?',am:'በእፅዋት ውስጥ ውሃን የሚወስደው ክፍል የትኛው ነው?',o:['Flower / አበባ','Leaf / ቅጠል','Root / ሥር','Fruit / ፍሬ'],a:2},
+ {c:'science',en:'What gas do humans need to breathe?',am:'ሰዎች ለመተንፈስ የሚያስፈልጋቸው ጋዝ የትኛው ነው?',o:['Oxygen / ኦክስጅን','Helium / ሂሊየም','Hydrogen / ሃይድሮጅን','Carbon dioxide / ካርቦን ዳይኦክሳይድ'],a:0},
+ {c:'science',en:'What force pulls objects toward Earth?',am:'ነገሮችን ወደ ምድር የሚስበው ኃይል ምንድን ነው?',o:['Magnetism / መግነጢሳዊ ኃይል','Gravity / ስበት','Friction / ግጭት','Light / ብርሃን'],a:1},
+ {c:'amharic',en:'What does ፀሐይ mean in English?',am:'“ፀሐይ” በእንግሊዝኛ ምን ማለት ነው?',o:['Moon','Star','Sun','Cloud'],a:2},
+ {c:'amharic',en:'Which word means “water” in Amharic?',am:'“ውሃ” ማለት ምንድን ነው?',o:['Fire / እሳት','Water / ውሃ','House / ቤት','Road / መንገድ'],a:1},
+ {c:'amharic',en:'What is the opposite of ትልቅ (big)?',am:'የ“ትልቅ” ተቃራኒ ቃል የትኛው ነው?',o:['ረጅም','ትንሽ','ፈጣን','ሙቅ'],a:1},
+ {c:'amharic',en:'Which is a greeting in Amharic?',am:'በአማርኛ ሰላምታ የሆነው የትኛው ነው?',o:['ሰላም','ውሃ','ቤት','መጽሐፍ'],a:0},
+ {c:'amharic',en:'What does መጽሐፍ mean?',am:'“መጽሐፍ” ምን ማለት ነው?',o:['Book / መጽሐፍ','School / ትምህርት ቤት','Friend / ጓደኛ','Tree / ዛፍ'],a:0},
+ {c:'ethiopia',en:'What is the capital of Ethiopia?',am:'የኢትዮጵያ ዋና ከተማ ምንድን ናት?',o:['Bahir Dar / ባሕር ዳር','Gondar / ጎንደር','Addis Ababa / አዲስ አበባ','Dessie / ደሴ'],a:2},
+ {c:'ethiopia',en:'Lake Tana is the source of which famous river?',am:'ጣና ሐይቅ የየትኛው ታዋቂ ወንዝ ምንጭ ነው?',o:['Awash / አዋሽ','Blue Nile / አባይ','Omo / ኦሞ','Wabi Shebelle / ዋቢ ሸበሌ'],a:1},
+ {c:'ethiopia',en:'Gojjam is a historic area in which region?',am:'ጎጃም በየትኛው ክልል የሚገኝ ታሪካዊ አካባቢ ነው?',o:['Amhara / አማራ','Oromia / ኦሮሚያ','Sidama / ሲዳማ','Afar / አፋር'],a:0},
+ {c:'ethiopia',en:'Which mountain is a landmark of Gojjam?',am:'የጎጃም መለያ ከሆኑ ተራሮች አንዱ የትኛው ነው?',o:['Choke / ጮቄ','Kilimanjaro / ኪሊማንጃሮ','Everest / ኤቨረስት','Atlas / አትላስ'],a:0},
+ {c:'ethiopia',en:'Ethiopian Christmas is commonly celebrated on…',am:'የኢትዮጵያ ገና በተለምዶ መቼ ይከበራል?',o:['January 7 / ጥር 7','February 14 / የካቲት 14','April 1 / ሚያዝያ 1','September 11 / መስከረም 11'],a:0}
+];
