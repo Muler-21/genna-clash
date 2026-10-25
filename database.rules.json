@@ -2,6 +2,7 @@
   "rules": {
     "rooms": {
       "$room": {
+        ".read": "auth != null",
         "state": {
           ".read": "auth != null",
           ".write": "auth != null && ((!data.exists() && newData.child('hostUid').val() === auth.uid) || (data.child('hostUid').val() === auth.uid) || (data.exists() && root.child('rooms').child($room).child('players').child(data.child('hostUid').val()).child('connected').val() !== true && newData.child('hostUid').val() === auth.uid))",
