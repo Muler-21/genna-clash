@@ -857,13 +857,13 @@ const QUESTIONS = [
   {
     "id": "amharic-02",
     "c": "amharic",
-    "en": "Which word means “water” in Amharic?",
-    "am": "“ውሃ” ማለት ምንድን ነው?",
+    "en": "Which Amharic word means “water”?",
+    "am": "“water” በአማርኛ ምን ይባላል?",
     "o": [
-      "Fire / እሳት",
-      "Water / ውሃ",
-      "House / ቤት",
-      "Road / መንገድ"
+      "እሳት",
+      "ውሃ",
+      "ቤት",
+      "መንገድ"
     ],
     "a": 1,
     "grade": 3
@@ -902,10 +902,10 @@ const QUESTIONS = [
     "en": "What does መጽሐፍ mean?",
     "am": "“መጽሐፍ” ምን ማለት ነው?",
     "o": [
-      "Book / መጽሐፍ",
-      "School / ትምህርት ቤት",
-      "Friend / ጓደኛ",
-      "Tree / ዛፍ"
+      "Book",
+      "School",
+      "Friend",
+      "Tree"
     ],
     "a": 0,
     "grade": 3
@@ -913,7 +913,7 @@ const QUESTIONS = [
   {
     "id": "amharic-06",
     "c": "amharic",
-    "en": "Which word means “mother”?",
+    "en": "What does እናት mean?",
     "am": "“እናት” ማለት ምንድን ነው?",
     "o": [
       "Father",
@@ -927,7 +927,7 @@ const QUESTIONS = [
   {
     "id": "amharic-07",
     "c": "amharic",
-    "en": "Which word means “house”?",
+    "en": "What does ቤት mean?",
     "am": "“ቤት” ማለት ምንድን ነው?",
     "o": [
       "House",
@@ -941,7 +941,7 @@ const QUESTIONS = [
   {
     "id": "amharic-08",
     "c": "amharic",
-    "en": "What is the plural meaning of ተማሪ (student) commonly written as?",
+    "en": "What is the plural of ተማሪ (student)?",
     "am": "የ“ተማሪ” ብዙ ቁጥር በተለምዶ እንዴት ይጻፋል?",
     "o": [
       "ተማሪዎች",
@@ -955,13 +955,13 @@ const QUESTIONS = [
   {
     "id": "amharic-09",
     "c": "amharic",
-    "en": "Which word means “peace”?",
-    "am": "“ሰላም” ምን ማለት ነው?",
+    "en": "Which Amharic word means “peace”?",
+    "am": "“peace” በአማርኛ ምን ይባላል?",
     "o": [
-      "Peace / ሰላም",
-      "Rain / ዝናብ",
-      "Fire / እሳት",
-      "Night / ሌሊት"
+      "ሰላም",
+      "ዝናብ",
+      "እሳት",
+      "ሌሊት"
     ],
     "a": 0,
     "grade": 3
@@ -997,7 +997,7 @@ const QUESTIONS = [
   {
     "id": "amharic-12",
     "c": "amharic",
-    "en": "Which word means “fast”?",
+    "en": "What does ፈጣን mean?",
     "am": "“ፈጣን” ምን ማለት ነው?",
     "o": [
       "Slow",
@@ -1011,7 +1011,7 @@ const QUESTIONS = [
   {
     "id": "amharic-13",
     "c": "amharic",
-    "en": "Which word means “beautiful”?",
+    "en": "What does ቆንጆ mean?",
     "am": "“ቆንጆ” ምን ማለት ነው?",
     "o": [
       "Beautiful",
@@ -1039,7 +1039,7 @@ const QUESTIONS = [
   {
     "id": "amharic-15",
     "c": "amharic",
-    "en": "Which word means “school”?",
+    "en": "What does ትምህርት ቤት mean?",
     "am": "“ትምህርት ቤት” ምን ማለት ነው?",
     "o": [
       "Market",
@@ -1053,7 +1053,7 @@ const QUESTIONS = [
   {
     "id": "amharic-16",
     "c": "amharic",
-    "en": "Which word is a number: ሦስት?",
+    "en": "Which number is ሦስት?",
     "am": "“ሦስት” የትኛው ቁጥር ነው?",
     "o": [
       "2",
@@ -1081,7 +1081,7 @@ const QUESTIONS = [
   {
     "id": "amharic-18",
     "c": "amharic",
-    "en": "Which word means “rain”?",
+    "en": "What does ዝናብ mean?",
     "am": "“ዝናብ” ምን ማለት ነው?",
     "o": [
       "Wind",
@@ -1109,7 +1109,7 @@ const QUESTIONS = [
   {
     "id": "amharic-20",
     "c": "amharic",
-    "en": "Which word means “friend”?",
+    "en": "What does ጓደኛ mean?",
     "am": "“ጓደኛ” ምን ማለት ነው?",
     "o": [
       "Enemy",
@@ -1123,7 +1123,7 @@ const QUESTIONS = [
   {
     "id": "amharic-21",
     "c": "amharic",
-    "en": "Which is a verb meaning “to eat”?",
+    "en": "What does መብላት mean?",
     "am": "“መብላት” ምን ማለት ነው?",
     "o": [
       "To sleep",
@@ -1137,7 +1137,7 @@ const QUESTIONS = [
   {
     "id": "amharic-22",
     "c": "amharic",
-    "en": "Which word means “mountain”?",
+    "en": "What does ተራራ mean?",
     "am": "“ተራራ” ምን ማለት ነው?",
     "o": [
       "Mountain",
@@ -1165,12 +1165,12 @@ const QUESTIONS = [
   {
     "id": "amharic-24",
     "c": "amharic",
-    "en": "Which punctuation mark often ends a question in Amharic writing?",
-    "am": "በአማርኛ ጽሑፍ ጥያቄን ለመጨረስ የሚጠቀምበት ምልክት የትኛው ነው?",
+    "en": "Which is the traditional Ethiopic question mark?",
+    "am": "ባህላዊው የግዕዝ የጥያቄ ምልክት የትኛው ነው?",
     "o": [
       "።",
       "፣",
-      "? only",
+      "፤",
       "፧"
     ],
     "a": 3,
@@ -1179,13 +1179,13 @@ const QUESTIONS = [
   {
     "id": "amharic-25",
     "c": "amharic",
-    "en": "Which word is closest in meaning to ደስታ?",
-    "am": "“ደስታ” በትርጉም በጣም የሚቀርበው የትኛው ነው?",
+    "en": "What does ደስታ mean?",
+    "am": "“ደስታ” ምን ማለት ነው?",
     "o": [
-      "Joy / ደስታ",
-      "Fear / ፍርሃት",
-      "Pain / ህመም",
-      "Anger / ቁጣ"
+      "Joy",
+      "Fear",
+      "Pain",
+      "Anger"
     ],
     "a": 0,
     "grade": 5
@@ -1207,7 +1207,7 @@ const QUESTIONS = [
   {
     "id": "amharic-27",
     "c": "amharic",
-    "en": "Which word means “tomorrow”?",
+    "en": "What does ነገ mean?",
     "am": "“ነገ” ምን ማለት ነው?",
     "o": [
       "Yesterday",
@@ -1221,7 +1221,7 @@ const QUESTIONS = [
   {
     "id": "amharic-28",
     "c": "amharic",
-    "en": "Which word means “teacher”?",
+    "en": "What does መምህር mean?",
     "am": "“መምህር” ምን ማለት ነው?",
     "o": [
       "Student",
@@ -1235,13 +1235,13 @@ const QUESTIONS = [
   {
     "id": "amharic-29",
     "c": "amharic",
-    "en": "What does ትጋት most closely mean?",
-    "am": "“ትጋት” በቅርብ ምን ማለት ነው?",
+    "en": "What does ትጋት mean?",
+    "am": "“ትጋት” ምን ማለት ነው?",
     "o": [
-      "Diligence / ትጋት",
-      "Laziness / ስንፍና",
-      "Noise / ጫጫታ",
-      "Sleep / እንቅልፍ"
+      "Diligence",
+      "Laziness",
+      "Noise",
+      "Sleep"
     ],
     "a": 0,
     "grade": 8
@@ -1277,8 +1277,8 @@ const QUESTIONS = [
   {
     "id": "ethiopia-02",
     "c": "ethiopia",
-    "en": "Lake Tana is the source of which famous river?",
-    "am": "ጣና ሐይቅ የየትኛው ታዋቂ ወንዝ ምንጭ ነው?",
+    "en": "Which famous river flows out of Lake Tana?",
+    "am": "ከጣና ሐይቅ የሚወጣው ታዋቂ ወንዝ የትኛው ነው?",
     "o": [
       "Awash / አዋሽ",
       "Blue Nile / አባይ",
@@ -1322,10 +1322,10 @@ const QUESTIONS = [
     "en": "Ethiopian Christmas is commonly celebrated on…",
     "am": "የኢትዮጵያ ገና በተለምዶ መቼ ይከበራል?",
     "o": [
-      "January 7 / ጥር 7",
-      "February 14 / የካቲት 14",
-      "April 1 / ሚያዝያ 1",
-      "September 11 / መስከረም 11"
+      "January 7 / ጃንዋሪ 7",
+      "February 14 / ፌብሩዋሪ 14",
+      "April 1 / ኤፕሪል 1",
+      "September 11 / ሴፕቴምበር 11"
     ],
     "a": 0,
     "grade": 3
@@ -1347,7 +1347,7 @@ const QUESTIONS = [
   {
     "id": "ethiopia-07",
     "c": "ethiopia",
-    "en": "What are the two main colours on Ethiopia’s national flag traditionally associated with?",
+    "en": "Which two colours appear on Ethiopia’s national flag?",
     "am": "በኢትዮጵያ ባንዲራ ላይ ካሉ ቀለሞች መካከል ሁለቱ የትኞቹ ናቸው?",
     "o": [
       "Green and yellow / አረንጓዴና ቢጫ",
@@ -1403,13 +1403,13 @@ const QUESTIONS = [
   {
     "id": "ethiopia-11",
     "c": "ethiopia",
-    "en": "Which animal is strongly associated with Ethiopian coffee ceremonies?",
+    "en": "Which item is central to the Ethiopian coffee ceremony?",
     "am": "ከኢትዮጵያ የቡና ሥነ ሥርዓት ጋር በቀጥታ የተያያዘው የትኛው ነው?",
     "o": [
       "Clay coffee pot / ጀበና",
       "Fishing net / መረብ",
-      "Snow shovel",
-      "Saddle only"
+      "Snow shovel / የበረዶ አካፋ",
+      "Saddle / ኮርቻ"
     ],
     "a": 0,
     "grade": 4
@@ -1431,8 +1431,8 @@ const QUESTIONS = [
   {
     "id": "ethiopia-13",
     "c": "ethiopia",
-    "en": "What is the name of Ethiopia’s famous long-distance runner Abebe Bikila’s sport?",
-    "am": "አበበ ቢቂላ የታወቀበት ስፖርት ምንድን ነው?",
+    "en": "In which event did Abebe Bikila win Olympic gold?",
+    "am": "አበበ ቢቂላ በየትኛው ውድድር የኦሎምፒክ ወርቅ አሸነፈ?",
     "o": [
       "Swimming / ዋና",
       "Marathon running / ማራቶን ሩጫ",
@@ -1476,7 +1476,7 @@ const QUESTIONS = [
     "en": "Which river is also known as the Abay in Ethiopia?",
     "am": "በኢትዮጵያ አባይ ተብሎ የሚጠራው ወንዝ የትኛው ነው?",
     "o": [
-      "Blue Nile / የሰማያዊ ናይል",
+      "Blue Nile / ሰማያዊ ናይል",
       "Awash / አዋሽ",
       "Omo / ኦሞ",
       "Baro / ባሮ"
@@ -1515,13 +1515,13 @@ const QUESTIONS = [
   {
     "id": "ethiopia-19",
     "c": "ethiopia",
-    "en": "What is the traditional woven pattern on many Ethiopian clothes called in English?",
-    "am": "በብዙ የኢትዮጵያ ልብሶች ላይ የሚታየው የተሸመነ ጌጥ በእንግሊዝኛ ምን ይባላል?",
+    "en": "What is the colourful woven border on traditional Ethiopian clothes called?",
+    "am": "በባህላዊ የኢትዮጵያ ልብሶች ጠርዝ ላይ የሚሸመነው ባለቀለም ጌጥ ምን ይባላል?",
     "o": [
       "Tibeb / ጥበብ",
-      "Denim",
-      "Tartan only",
-      "Lace only"
+      "Denim / ጂንስ",
+      "Tartan",
+      "Lace"
     ],
     "a": 0,
     "grade": 5
@@ -1585,10 +1585,10 @@ const QUESTIONS = [
   {
     "id": "ethiopia-24",
     "c": "ethiopia",
-    "en": "What is the name of the Ethiopian Orthodox Christmas celebration?",
+    "en": "What is the Ethiopian Orthodox Christmas celebration called?",
     "am": "የኢትዮጵያ ኦርቶዶክስ የገና በዓል በምን ስም ይጠራል?",
     "o": [
-      "Lidet / ልደት",
+      "Genna (Lidet) / ገና (ልደት)",
       "Timkat / ጥምቀት",
       "Meskel / መስቀል",
       "Irreecha / ኢሬቻ"
@@ -1613,8 +1613,8 @@ const QUESTIONS = [
   {
     "id": "ethiopia-26",
     "c": "ethiopia",
-    "en": "What does the Ethiopian word “Abay” refer to in this geography question?",
-    "am": "በዚህ የጂኦግራፊ ጥያቄ “አባይ” የሚለው ቃል ምንን ያመለክታል?",
+    "en": "In Ethiopian geography, what is the Abay?",
+    "am": "በኢትዮጵያ ጂኦግራፊ “አባይ” ምንድን ነው?",
     "o": [
       "A river / ወንዝ",
       "A desert / በረሃ",
@@ -1646,7 +1646,7 @@ const QUESTIONS = [
     "o": [
       "Stick-and-ball game / በዱላና ኳስ የሚጫወት ጨዋታ",
       "Ice hockey",
-      "Cricket only",
+      "Cricket",
       "Golf"
     ],
     "a": 0,
@@ -1659,8 +1659,8 @@ const QUESTIONS = [
     "am": "ከጎጃም ጋር በጣም የሚያያዘው የደጋ መለያ የትኛው ነው?",
     "o": [
       "Choke Mountains / ጮቄ ተራሮች",
-      "Simien only / ሰሜን ተራሮች ብቻ",
-      "Bale only / ባሌ ብቻ",
+      "Simien Mountains / ሰሜን ተራሮች",
+      "Bale Mountains / ባሌ ተራሮች",
       "Danakil Depression / ዳናኪል ተፋሰስ"
     ],
     "a": 0,
@@ -1674,8 +1674,8 @@ const QUESTIONS = [
     "o": [
       "Coffee / ቡና",
       "Maple syrup",
-      "Olives only",
-      "Cocoa only"
+      "Olives",
+      "Cocoa"
     ],
     "a": 0,
     "grade": 8

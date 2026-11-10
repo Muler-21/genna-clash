@@ -1,0 +1,61 @@
+cff-version: 1.2.0
+message: >-
+  If you use Genna Clash or its question bank in teaching, research, an event or another project, please cite it
+  as below.
+type: software
+title: "Genna Clash: A bilingual multiplayer team quiz inspired by Genna, the Ethiopian Christmas game"
+abstract: >-
+  Genna Clash (Amharic: የጎጃም ገና, "Genna of Gojjam") is a free, real-time multiplayer quiz game for classrooms and
+  families, inspired by Genna, the traditional stick-and-ball game played in the Ethiopian highlands at Christmas.
+  Two teams, Red and Green, answer the same 15-second questions; fast correct answers push the ball towards the
+  other team's goal. It offers 120 questions in English and Amharic across four categories (math, science, Amharic
+  words, and Ethiopia and Gojjam), a teacher mode that filters questions by school grade (3–8) and category, original
+  SVG/CSS artwork and browser-generated sound. It runs as a static web page on GitHub Pages with Firebase Realtime
+  Database and anonymous sign-in, so players need no accounts.
+authors:
+  - family-names: Bitew
+    given-names: Mulusew Kassa
+    alias: Muler
+    orcid: "https://orcid.org/0000-0001-6223-0037"
+version: 1.1.0
+date-released: "2026-11-10"
+url: "https://muler-21.github.io/genna-clash/"
+repository-code: "https://github.com/Muler-21/genna-clash"
+license:
+  - PolyForm-Noncommercial-1.0.0
+  - CC-BY-NC-4.0
+keywords:
+  - educational game
+  - multiplayer game
+  - quiz
+  - Genna
+  - Ethiopian Christmas
+  - traditional games
+  - Gojjam
+  - Amhara
+  - Ethiopia
+  - Amharic
+  - bilingual education
+  - Firebase
+references:
+  - type: newspaper-article
+    title: "Unique features of Ethiopian Christmas 'Genna'"
+    authors:
+      - family-names: Hailu
+        given-names: Fenet
+    publisher:
+      name: Ethiopian News Agency
+    url: "https://www.ena.et/en/?p=5346"
+  - type: website
+    title: Ye'gena Chewata (KAS African History Calendar, 7 January)
+    authors:
+      - name: Konrad-Adenauer-Stiftung, Foundation Office Ethiopia
+    year: 2023
+    url: "https://www.kas.de/en/web/aethiopien/static-contents-detail/-/content/ye-gena-chewata-1"
+  - type: encyclopedia
+    title: Ethiopian Christmas
+    authors:
+      - name: Wikipedia contributors
+    publisher:
+      name: Wikipedia
+    url: "https://en.wikipedia.org/wiki/Ethiopian_Christmas"
