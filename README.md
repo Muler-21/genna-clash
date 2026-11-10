@@ -12,6 +12,7 @@ as in Genna, the stick-and-ball game played in the Ethiopian highlands at Christ
 [![Players](https://img.shields.io/badge/players-2%E2%80%93100%2C%20two%20teams-386847)](#how-to-play)
 [![Languages](https://img.shields.io/badge/languages-English%20%C2%B7%20%E1%8A%A0%E1%88%9B%E1%88%AD%E1%8A%9B-D9B95F)](#features)
 [![Questions](https://img.shields.io/badge/questions-120%2C%20grades%203%E2%80%938-A83B31)](#question-bank)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24115035.svg)](https://doi.org/10.5281/zenodo.24115035)
 [![Cite](https://img.shields.io/badge/cite-CITATION.cff-0A66C2)](#how-to-cite)
 [![Licence](https://img.shields.io/badge/licence-non--commercial-lightgrey)](#licence)
 [![ORCID](https://img.shields.io/badge/ORCID-0000--0001--6223--0037-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0000-0001-6223-0037)
@@ -114,7 +115,7 @@ celebration) and does not try to reproduce its rules.
 If you use Genna Clash or its question bank in teaching, research, an event or another project, please cite it:
 
 > Bitew, M. K. (2026). *Genna Clash: A bilingual multiplayer team quiz inspired by Genna, the Ethiopian Christmas
-> game* (Version 1.1.0) [Computer software]. https://github.com/Muler-21/genna-clash
+> game* (Version 1.1.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.24115035
 
 ```bibtex
 @software{bitew_2026_genna_clash,
@@ -123,7 +124,9 @@ If you use Genna Clash or its question bank in teaching, research, an event or a
              the Ethiopian Christmas Game},
   year    = {2026},
   version = {1.1.0},
-  url     = {https://github.com/Muler-21/genna-clash},
+  publisher = {Zenodo},
+  doi     = {10.5281/zenodo.24115035},
+  url     = {https://doi.org/10.5281/zenodo.24115035},
   note    = {Playable at https://muler-21.github.io/genna-clash/}
 }
 ```
