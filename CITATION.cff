@@ -21,9 +21,9 @@ version: 1.1.0
 date-released: "2026-11-10"
 url: "https://muler-21.github.io/genna-clash/"
 repository-code: "https://github.com/Muler-21/genna-clash"
-license:
-  - PolyForm-Noncommercial-1.0.0
-  - CC-BY-NC-4.0
+# Code: PolyForm Noncommercial 1.0.0. Images, text and question/knowledge content: CC BY-NC 4.0 (see LICENSE-CONTENT.md).
+# A single licence is given here because Zenodo accepts only one.
+license: PolyForm-Noncommercial-1.0.0
 keywords:
   - educational game
   - multiplayer game
