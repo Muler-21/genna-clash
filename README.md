@@ -18,7 +18,7 @@ as in Genna, the stick-and-ball game played in the Ethiopian highlands at Christ
 
 <img src="docs/img/screens.png" width="860" alt="Genna Clash on a phone: the home screen, a question in Amharic, and a goal for the Green team (demo match)">
 
-**Created by [Mulusew Kassa Bitew (Muler)](https://orcid.org/0000-0001-6223-0037)** ·
+**Created by [Mulusew Kassa Bitew](https://orcid.org/0000-0001-6223-0037)** ·
 [How to play](#how-to-play) · [How to cite](#how-to-cite) · [Sources](#sources) · [Licence](#licence)
 
 </div>
@@ -244,8 +244,7 @@ For **commercial licensing**, contact the author through [GitHub](https://github
 
 ## Author
 
-**Mulusew Kassa Bitew (Muler)** · ORCID [0000-0001-6223-0037](https://orcid.org/0000-0001-6223-0037) ·
-GitHub [Muler-21](https://github.com/Muler-21) · Also by the author:
-[Sebel Hakim](https://github.com/Muler-21/sebel-hakim), free offline crop-disease diagnosis.
-
+**Mulusew Kassa Bitew**, Postdoctoral Research Fellow, University of Molise, Italy\
+ORCID [0000-0001-6223-0037](https://orcid.org/0000-0001-6223-0037) · GitHub [@Muler-21](https://github.com/Muler-21) · Website [muler-21.github.io](https://muler-21.github.io)\
+Other apps: [Research Integrity Compass](https://github.com/Muler-21/Research-Integrity-Compass-) · [Sebel Hakim](https://github.com/Muler-21/sebel-hakim) · [Genna Clash](https://github.com/Muler-21/genna-clash)\
 © 2026 Mulusew Kassa Bitew. See [Licence](#licence).

@@ -1,6 +1,6 @@
 # Licence for content
 
-Copyright (c) 2026 Mulusew Kassa Bitew (Muler)
+Copyright (c) 2026 Mulusew Kassa Bitew
 
 Genna Clash is made of two kinds of material, each with its own licence:
 
